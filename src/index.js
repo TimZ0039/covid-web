@@ -31,7 +31,7 @@ class MyForm extends React.Component {
     return (
       <form onSubmit={this.mySubmitHandler}>
       <h1>Welcome to Covid Tracker </h1>
-      <p>Enter the state you want to look at:</p>
+      <p>Enter the school you want to look at:</p>
       <input
         type='text'
         onChange={this.myChangeHandler}
@@ -39,11 +39,11 @@ class MyForm extends React.Component {
       <input
         type='submit'
       />
-      <p>{this.state.schoolName}</p>
-      <p>{this.state.state}</p>
-      <p>{this.state.positive}</p>
-      <p>{this.state.negative}</p>
-      <p>{this.state.testPositiveRate}</p>
+      <p>school name:{this.state.schoolName}</p>
+      <p>location:{this.state.state}</p>
+      <p>state's positive number:{this.state.positive}</p>
+      <p>state's negative number:{this.state.negative}</p>
+      <p>state's positive rate:{this.state.testPositiveRate}</p>
       </form>
     );
   }
